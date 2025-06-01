@@ -20,6 +20,7 @@ This project includes a PowerShell script that automates the creation of Active 
 FirstName,LastName,Username,Password
 Chris,Adams,CAdam,P@Ssw0rd123
 Leila,Khan,LKhan,P@ssword456
+```
 
 ## How It Works
 
@@ -40,30 +41,26 @@ The AD Path used in the script is:
 3. Import the AD module if needed:
    ```powershell
    Import-Module ActiveDirectory
-4. Run the script
-  .\create-ad-users.ps1
+   ```
+4. Run the script:
+   ```powershell
+   .\create-ad-users.ps1
+   ```
 
 ## Example Output
-Created user: TSmith
-Created user: JMorris
 
-Notes
-- Modify the -Path value in the script if you are using a specific Organizational Unit (OU)
-- Script assumes the Active Directory PowerShell module is installed
+```powershell
+Created user: CAdam
+Created user: LKhan
+```
+
+## Notes
+
+- Modify the `-Path` value in the script if you are using a specific Organizational Unit (OU)  
+- Script assumes the Active Directory PowerShell module is installed  
 - Requires administrative privileges on the domain controller
 
 ## Author
-Rohan Bangash
-GitHub: github.com/Rohan-Bangash
 
-
-
-
-
-
-
-
-
-
-
-
+**Rohan Bangash**  
+GitHub: [github.com/Rohan-Bangash](https://github.com/Rohan-Bangash)
